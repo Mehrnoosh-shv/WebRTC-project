@@ -96,6 +96,8 @@ function send(message) {
 	
    connection.send(JSON.stringify(message)); 
 };
+
+
 //setup a peer connection with another user 
 connectToOtherUsernameBtn.addEventListener("click", function () {
   

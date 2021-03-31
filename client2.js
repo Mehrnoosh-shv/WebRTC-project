@@ -12,7 +12,7 @@ if (hasUserMedia()) {
    navigator.getUserMedia({ video: true, audio: true }, function (stream) {
       var video = document.querySelector('video');
 
-      //inserting our stream to the video tag     
+      //inserting our stream to the video tag
       video.srcObject = stream;
       var newStream = new MediaStream(stream);
       
