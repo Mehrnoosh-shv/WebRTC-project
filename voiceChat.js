@@ -107,7 +107,7 @@ function handleLogin(success) {
       navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia
       || navigator.mozGetUserMedia;
 
-      navigator.getUserMedia({ video: true, audio: false }, function (myStream) { 
+      navigator.getUserMedia({ video: false, audio: true }, function (myStream) { 
          stream = myStream; 
 			
          //displaying local video stream on the page 
